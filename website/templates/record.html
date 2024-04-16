@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<!-- <h1>Vendor Record: </h1> -->
+
+<div class="card">
+  <div class="card-header"><strong>
+    {{ vendor_record.company_name }}</strong>
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+    	<strong>ID:</strong>{{ vendor_record.id }}</p>
+
+    <p class="card-text">
+        <strong>License:</strong>{{ vendor_record.company_license }}</p>
+
+    <p class="card-text">
+        <strong>Email:</strong>{{ vendor_record.email }}</p>
+
+    <p class="card-text">
+        <strong>Phone:</strong>{{ vendor_record.phone }}</p>
+
+    <p class="card-text">
+        <strong>Website:</strong>{{ vendor_record.website }}</p>
+
+    <p class="card-text">
+        <strong>Vendor Type:</strong>{{ vendor_record.vendor_type }}</p>
+
+  </div>
+</div>
+
+<br/><br/>
+
+<a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
+			 
+
+
+
+
+
+{% endblock %}
